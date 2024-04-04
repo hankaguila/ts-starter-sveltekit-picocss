@@ -1,0 +1,19 @@
+# Exclude
+*
+
+# Include
+!src
+!src/**
+!static
+!static/**
+!test
+!test/**
+!.gitignore
+!.npmrc
+!.prettierrc.json
+!LICENSE
+!package.json
+!README.md
+!svelte.config.js
+!tsconfig.json
+!vite.config.ts

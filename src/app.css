@@ -1,0 +1,80 @@
+@import "@fontsource/montserrat";
+@import "material-symbols";
+@import "pico.conditional.slate.css";
+
+:root {
+  --pico-font-family-sans-serif: sans-serif;
+  --pico-font-family-monospace: monospace;
+  --pico-font-family: Montserrat, sans-serif;
+  --pico-font-size: 1rem;
+  --pico-form-element-spacing-horizontal: 0.5em;
+  --pico-form-element-spacing-vertical: 0.5em;
+  --pico-border-radius: 4px;
+  --pico-border-width: 1px;
+  --pico-outline-width: 2px;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-weight: normal;
+  background: none;
+  box-sizing: border-box;
+}
+
+/* Base */
+
+html, body {
+  font-family: var(--pico-font-family);
+  font-size: var(--pico-font-size);
+}
+
+button {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Classes */
+
+.ghost {
+  color: var(--pico-background-color) !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0.5rem !important;
+  opacity: 75% !important;
+}
+
+.ghost:hover {
+  opacity: 100% !important;
+}
+
+.material-symbols-outlined {
+  color: inherit;
+  font-variation-settings: "FILL" 1, "wght" 300;
+  text-decoration: none;
+}
+
+button.material-symbols-outlined:hover,
+a.material-symbols-outlined:hover {
+  font-variation-settings: "FILL" 1, "wght" 400;
+  cursor: pointer;
+}
+
+.pico dialog {
+  display: grid;
+  height: 100%;  /* So backdrop covers the viewport */
+}
+
+.pico dialog article {
+  margin: 0 !important;  /* So modal fits on small viewports */
+}
+
+.pico form > *:last-child {
+  margin-bottom: 0 !important;  /* Removes ugly overhang */
+}

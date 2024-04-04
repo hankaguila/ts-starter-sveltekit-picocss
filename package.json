@@ -1,0 +1,36 @@
+{
+  "name": "ts-starter-sveltekit-picocss",
+  "version": "0.1.0",
+  "author": "Henry Aguila",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "ts": "esrun",
+    "build": "svelte-kit sync",
+    "dev": "vite",
+    "dist": "vite build",
+    "prod": "vite preview",
+    "test": "vitest --dir=test run"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^5.0.1",
+    "@sveltejs/kit": "^2.5.5",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@types/node": "^20.12.3",
+    "esrun": "^3.2.26",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.2",
+    "svelte": "^4.2.12",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.8",
+    "vitest": "^1.4.0"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.0.17",
+    "material-symbols": "^0.17.1"
+  }
+}
