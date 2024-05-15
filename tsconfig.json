@@ -4,7 +4,6 @@
   "compilerOptions": {
     // Type Checking
     "strict": true,
-    "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
 
     // Modules
@@ -31,7 +30,5 @@
     // Completeness
     "skipLibCheck": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
